@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending - ArtBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">ArtBook</div>
+        <ul class="nav-links">
+            <li><a href="trending.html">Trending</a></li>
+            <li><a href="popular.html"class="active">Popular</a></li>
+            <li><a href="latest.html">Latest</a></li>
+        </ul>
+        <button class="nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+    </nav>
+
+    <section class="trending-images">
+        <img src="Art13.jpg" alt="Artwork 13" class="img13">
+        <img src="Art14.jpg" alt="Artwork 14" class="img14">
+        <img src="Art15.jpg" alt="Artwork 15" class="img15">
+        <img src="Art16.jpg" alt="Artwork 16" class="img16">
+        <img src="Art17.jpg" alt="Artwork 17" class="img17">
+        <img src="Art18.jpg" alt="Artwork 18" class="img18">
+        <img src="Art19.jpg" alt="Artwork 19" class="img19">
+      </section>
+
+      <div class="comment-modal" id="commentModal">
+        <div class="comment-container">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <div class="comment-left">
+            <h3>Comentarii</h3>
+            <div class="comments-list" id="commentsList"></div>
+            <textarea id="commentInput" placeholder="Scrie un comentariu..." rows="5"></textarea>
+            <button class="submit-comment" id="submitComment">Trimite</button>
+            <button id="deleteImage" class="submit-comment delete-button" style="display: none; margin-top: 10px;">Șterge</button>
+    
+          </div>
+          <div class="comment-right">
+            <img id="selectedImage" src="" alt="Selected artwork">
+          </div>
+        </div>
+      </div>
+
+      <script>
+      
+        const navToggle = document.querySelector('.nav-toggle');
+        navToggle.onclick = () => {
+          window.location.href = 'profile.html';
+        };
+      </script>
+    
+      <script src="app.js"></script>
+    </body>
+    </html>
